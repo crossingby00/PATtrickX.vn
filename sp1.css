@@ -1,0 +1,224 @@
+:root{
+    /* khung de tao cho nhap */
+    --leading: 5em
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0
+    
+}
+
+.topStart{
+    
+    background-image: url(https://i.pinimg.com/originals/83/f8/55/83f855c7c63413b2d07b6f541cfbdd26.jpg)
+    ;
+    background-position: 50%;
+    background-size: auto;
+    background-repeat: no-repeat ;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+  
+     /* font-size: 20px;  */
+}
+
+header{
+    padding: 0.5em 0;
+    
+}
+
+.topStart a{
+    /* position: relative; */
+    /* margin-left: 40px;
+    left: 0%; */
+
+    color: rgb(243, 223, 223);
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+section{
+    margin: 0 1px;
+}
+h1{
+    font-size: 20 1em;
+    margin: 2em 0 2em;
+    color: rgb(154, 102, 202);
+    ;
+}
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    margin: 1em 1em 1.2em;
+}
+
+h1 p{
+    color: rgb(87, 187, 30);
+    position: relative;
+    margin: 1em 1em 2em
+}
+
+.info-contaniner{
+    background-color: lightblue;
+    margin:2px 0 20px;
+   border: solid rgb(0, 0, 0);
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 3);
+        
+   padding: 2em;
+}
+
+.info-contaniner p{
+    color: rgb(43, 40, 35);
+    margin-bottom: 3em;
+    font-weight: normal;
+    font-style: 9px;
+    margin-bottom: 5px;
+    font-size:large;
+}
+
+
+
+label{
+    color: #070707;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+input[type=text]{
+    border: 1px solid gray;
+    width: 90%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    
+}
+
+input[type=button]{
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    color: black ;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    color: blue;
+    background-color: rgb(202, 84, 231);
+}
+
+.Recommendation{
+    background-color: aliceblue;
+    margin: 0 0 1.2em;
+   text-align: center;
+   
+
+}
+.review #post{ 
+    width: 560px;
+float: left
+}
+
+.Ascore{
+    margin: auto;
+    border: 1px solid black;
+}
+
+th{
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+}
+
+.NAnime h2{
+    font: optional;
+}
+
+@media (min-width: 730px){
+    section{
+        margin: 0 4em;
+    }
+    .info-contaniner{
+        margin: 2em -4em 0;
+    }
+}
+@media (min-width: 930px) {
+    .topStart{
+        text-align: center;
+    }
+    .topStart p{
+        margin: 0 0 3px;
+    }
+    .topStart top{
+        width: 50%;
+    }
+    .RecapMyself{
+        margin: 2px 0 0;
+        padding: 2px;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgb(.1, .1, .1,3);
+    }
+    .info-contaniner{
+        width: auto;
+        margin: 0;
+    }
+    .text{
+        margin: auto;
+    }
+    input[type="button"]{
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        padding: 0.8em 0;
+        width: 35%;
+    }
+    .topStart{
+        margin-bottom: 0;
+    }
+    .Recommendation{
+        margin-top: -10px;
+    }
+    
+}
+@media (min-width: 730px){
+    section.review{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+            "anime content";
+    }
+    .right {
+        color: black;
+        max-width: 560px;
+        margin-top: -10px;
+        border: solid #8b8b8b;
+        grid-area: anime;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 3);
+        box-sizing:initial;
+    }
+    .left img {
+        margin-left: 20px;
+        margin-top: -10px;
+        grid-area: content;
+        max-width: 350px;
+        max-height: 500px;
+        width: auto;
+        height: auto;
+    }
+}
